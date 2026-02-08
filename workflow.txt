@@ -1,6 +1,6 @@
 Web-Based Application Development Project Workflows
 
-A brief 2–3 line description of what the web application is and its purpose.
+This web application is designed to be a personal, daily-use platform that combines productivity with creativity. It allows users to manage tasks in a light, gamified way while also offering a space to capture moments from their day through a digital scrapbook-style log. Rather than focusing strictly on productivity or mindfulness, the application aims to create a positive and enjoyable experience that users are motivated to return to daily. Through features such as task tracking, visual progress feedback, and customizable daily logs, the application supports organization, reflection, and self-expression within a single cohesive web-based system.
 
 
 WORKFLOW 1: User Onboarding and Login
@@ -32,15 +32,29 @@ The user …
 
 
 WORKFLOW 3: Daily Log Scrapbooking
-Contributor: (Name)
+Contributor: Zarmeen Rahman
 
 Purpose:
-This workflow allows users to …
+
+This workflow enables users to create a personalized daily log that functions as a digital scrapbook. The feature encourages reflection and creativity by allowing users to record moments from their day through images, short reflective prompts, and flexible visual arrangement.
 
 Steps:
-1. …
+
+- The user navigates to the day log section from the dashboard.
+- The system displays the current day’s log or an option to create a new log entry.
+- The user chooses to add content to the day log.
+- The system provides options to:
+     - Upload photos from the day
+     - Answer short, fun reflective prompts
+     - Add brief text notes
+- The user selects and adds their desired content.
+- The system allows the user to arrange and customize the layout of the log (using in-built art assets).
+- The user saves the day log.
+- The system stores the log and makes it accessible for future viewing and reflection.
+
 
 End Result:
-The user …
+
+The user creates a visually pleasing and meaningful record of their day, encouraging emotional engagement and long-term use of the application.
 
 

@@ -4,17 +4,22 @@ A brief 2–3 line description of what the web application is and its purpose.
 
 
 WORKFLOW 1: User Onboarding and Login
-Contributor: (Name)
+Contributor: Aabeerah Iqbal
 
 Purpose:
-This workflow allows users to …
+This workflow allows users to create a new account or access their existing account securely, enabling them to begin managing their personal tasks and productivity goals.
 
 Steps:
-1. …
+1. User navigates to the application homepage and clicks "Sign Up" or "Log In"
+2. For new users: User enters required information (email, password, and optionally a display name)
+3. System validates the input (checks email format, password strength requirements)
+4. For sign-up: System creates a new user account and sends a confirmation email
+5. For login: System authenticates credentials against the database
+6. Upon successful authentication, user is redirected to their personalized dashboard
+7. First-time users see a brief welcome tutorial highlighting key features (optional)
 
-End Result:
-The user …
-
+End Result: 
+The user successfully gains access to their personal dashboard where they can view, create, and manage their tasks. Their session is established, and they can begin using all features of the productivity application.
 
 
 WORKFLOW 2: Daily Planning and Task Management

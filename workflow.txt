@@ -1,0 +1,46 @@
+Web-Based Application Development Project Workflows
+
+A brief 2–3 line description of what the web application is and its purpose.
+
+
+WORKFLOW 1: User Onboarding and Login
+Contributor: (Name)
+
+Purpose:
+This workflow allows users to …
+
+Steps:
+1. …
+
+End Result:
+The user …
+
+
+
+WORKFLOW 2: Daily Planning and Task Management
+Contributor: (Name)
+
+Purpose:
+This workflow allows users to …
+
+Steps:
+1. …
+
+End Result:
+The user …
+
+
+
+WORKFLOW 3: Daily Log Scrapbooking
+Contributor: (Name)
+
+Purpose:
+This workflow allows users to …
+
+Steps:
+1. …
+
+End Result:
+The user …
+
+

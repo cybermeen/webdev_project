@@ -3,37 +3,35 @@ Web-Based Application Development Project Workflows
 This web application is designed to be a personal, daily-use platform that combines productivity with creativity. It allows users to manage tasks in a light, gamified way while also offering a space to capture moments from their day through a digital scrapbook-style log. Rather than focusing strictly on productivity or mindfulness, the application aims to create a positive and enjoyable experience that users are motivated to return to daily. Through features such as task tracking, visual progress feedback, and customizable daily logs, the application supports organization, reflection, and self-expression within a single cohesive web-based system.
 
 
-WORKFLOW 1: User Onboarding and Login
-Contributor: Aabeerah Iqbal
+WORKFLOW 1: 
+Contributor:
 
 Purpose:
-This workflow allows users to create a new account or access their existing account securely, enabling them to begin managing their personal tasks and productivity goals.
+This workflow allows users to 
 
 Steps:
-1. User navigates to the application homepage and clicks "Sign Up" or "Log In"
-2. For new users: User enters required information (email, password, and optionally a display name)
-3. System validates the input (checks email format, password strength requirements)
-4. For sign-up: System creates a new user account and sends a confirmation email
-5. For login: System authenticates credentials against the database
-6. Upon successful authentication, user is redirected to their personalized dashboard
-7. First-time users see a brief welcome tutorial highlighting key features (optional)
 
 End Result: 
-The user successfully gains access to their personal dashboard where they can view, create, and manage their tasks. Their session is established, and they can begin using all features of the productivity application.
 
 
 WORKFLOW 2: Daily Planning and Task Management
-Contributor: (Name)
+Contributor: Aabeerah Iqbal
 
-Purpose:
-This workflow allows users to …
+Purpose: 
+This workflow allows users to organize their day by creating, viewing, editing, and completing tasks, helping them stay on top of their priorities and track their progress.
 
 Steps:
-1. …
+1. User accesses their dashboard and views their current task list
+2. User clicks "Add New Task" button to create a task
+3. User enters task details (title, description, due date, priority level)
+4. System saves the task and displays it in the appropriate section (e.g., "Today," "This Week," "Upcoming")
+5. User can edit existing tasks by clicking on them and modifying details
+6. User marks tasks as complete by checking the checkbox next to each task
+7. Completed tasks move to a "Completed" section or are visually distinguished
+8. User can delete tasks if needed using a delete button
 
-End Result:
-The user …
-
+End Result: 
+The user has a clear, organized view of their daily tasks with the ability to track what's been accomplished. They maintain an up-to-date task list that helps them plan their day effectively and monitor their productivity progress.
 
 
 WORKFLOW 3: Daily Log Scrapbooking

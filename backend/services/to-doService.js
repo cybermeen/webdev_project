@@ -4,14 +4,14 @@ const db = require('../db/db');
 
 const ToDoService = {
   // Create a new task
-  async createTask(taskData) {
-    const { user_id, title, due_date, priority } = taskData;
-    const query = `
-      INSERT INTO tasks (user_id, title, due_date, priority)
-      VALUES ($1, $2, $3, $4) RETURNING *`;
-    const result = await db.query(query, [user_id, title, due_date, priority]);
-    return result.rows[0];
-  },
+  async createTask(taskData, userId) {
+  const { title, due_date, priority } = taskData; // Don't take user_id from the body
+  const query = `
+    INSERT INTO tasks (user_id, title, due_date, priority)
+    VALUES ($1, $2, $3, $4) RETURNING *`;
+  const result = await db.query(query, [userId, title, due_date, priority]);
+  return result.rows[0];
+},
 
   // Get and Sort Tasks
   async getCategorizedTasks(userId) {

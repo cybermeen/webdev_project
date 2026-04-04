@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS users (
   email          VARCHAR(50),
   password_hash  VARCHAR(50)
   
-)
+);
 
 CREATE TABLE IF NOT EXISTS day_logs (
 
@@ -143,6 +143,24 @@ CREATE TABLE IF NOT EXISTS log_stickers (
 
   created_at  TIMESTAMPTZ DEFAULT NOW()
 );
+
+-----------------------------
+-- TASKS FEATURE --
+------------------------------
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL, -- Assuming you'll link this to a Users table later
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    due_date TIMESTAMP NOT NULL,
+    priority VARCHAR(20) DEFAULT 'Medium', 
+    status VARCHAR(20) DEFAULT 'pending', -- 'pending' or 'completed'
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    completed_at TIMESTAMP
+);
+
+
 
 
 

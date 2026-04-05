@@ -35,16 +35,24 @@ const ToDoService = {
     };
   },
 
-  // Toggle Status
-  async toggleTaskStatus(taskId, userId) {
-    const query = `
-      UPDATE tasks 
-      SET status = CASE WHEN status = 'pending' THEN 'completed' ELSE 'pending' END,
-          completed_at = CASE WHEN status = 'pending' THEN NOW() ELSE NULL END
-      WHERE id = $1 AND user_id = $2 RETURNING *`;
-    const result = await db.query(query, [taskId, userId]);
-    return result.rows[0];
-  },
+  //update toggleTaskStatus method:
+
+async toggleTaskStatus(taskId, userId) {
+  const query = `
+    UPDATE tasks 
+    SET status = CASE WHEN status = 'pending' THEN 'completed' ELSE 'pending' END,
+        completed_at = CASE WHEN status = 'pending' THEN NOW() ELSE NULL END
+    WHERE id = $1 AND user_id = $2 RETURNING *`;
+  
+  const result = await db.query(query, [taskId, userId]);
+  
+  // Recalculate progress for the day
+  const ProgressService = require('./progressService');
+  await ProgressService.calculateDailyProgress(userId);
+  await ProgressService.calculateStreak(userId);
+  
+  return result.rows[0];
+},
 
   // Delete Task
   async deleteTask(taskId, userId) {

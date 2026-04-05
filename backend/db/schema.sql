@@ -160,6 +160,29 @@ CREATE TABLE IF NOT EXISTS tasks (
     completed_at TIMESTAMP
 );
 
+-- Add to schema.sql
+
+-- Track daily completion metrics
+CREATE TABLE IF NOT EXISTS daily_progress (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    date DATE NOT NULL,
+    total_tasks INTEGER DEFAULT 0,
+    completed_tasks INTEGER DEFAULT 0,
+    completion_percentage DECIMAL(5,2) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(user_id, date)
+);
+
+-- Track streaks
+CREATE TABLE IF NOT EXISTS user_streaks (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL UNIQUE,
+    current_streak INTEGER DEFAULT 0,
+    longest_streak INTEGER DEFAULT 0,
+    last_completed_date DATE,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
 
 

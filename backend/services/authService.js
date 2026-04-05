@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 const authService = {
-    // WF1 Requirement: hashPassword(password: string)
+    // hashPassword(password: string)
     async register(email, password, displayName) {
         const hash = await bcrypt.hash(password, saltRounds);
         const query = `
@@ -15,7 +15,7 @@ const authService = {
         return rows[0];
     },
 
-    // WF1 Requirement: verifyPassword(password: string)
+    // verifyPassword(password: string)
     async login(email, password) {
         const { rows } = await db.query('SELECT * FROM users WHERE email = $1', [email]);
         if (rows.length === 0) return null;
